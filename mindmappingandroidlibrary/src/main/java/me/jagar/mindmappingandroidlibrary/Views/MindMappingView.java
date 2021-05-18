@@ -127,7 +127,7 @@ public class MindMappingView extends RelativeLayout {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 switch (motionEvent.getAction()) {
-
+Toast.makeText(MainActivity.this, "Click." + item.getTitle(), Toast.LENGTH_LONG).show();
                     case MotionEvent.ACTION_DOWN:
                         dX[0] = view.getX() - motionEvent.getRawX();
                         dY[0] = view.getY() - motionEvent.getRawY();
